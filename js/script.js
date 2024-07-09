@@ -21,10 +21,10 @@ function encriptar() {
       codigo += " ";
     }
   }
-  console.log();
- 
   palabrasEncriptadas = codigo.split(' ');
-  console.log(palabrasEncriptadas);
+  console.log(codigo);
+  document.getElementById('main__texto__desencriptar__encriptar__titulo').textContent= "El texto Encriptado";
+  document.getElementById('main__texto__desencriptar__encriptar__contenido').value=codigo;
 }
 
 function encontrarCodigo(val) {
@@ -48,7 +48,8 @@ function desencriptar(){
           }
           console.log( textoDesencriptado);
     
-
+          document.getElementById('main__texto__desencriptar__encriptar__contenido').value=textoDesencriptado;
+          document.getElementById('main__texto__desencriptar__encriptar__titulo').textContent= "El texto Desencriptado";
     return textoDesencriptado;
 }
 
