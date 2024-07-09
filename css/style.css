@@ -41,7 +41,7 @@ body{
 .main__textArea textarea{
     resize: none;
     width: 343px;
-    height:auto;
+    height: 390px;
     font-family:'Inter', sans-serif ;
     font-size: 2rem;
     color: var(--color-secundario);

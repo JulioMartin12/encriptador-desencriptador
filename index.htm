@@ -14,15 +14,15 @@
     </header>
     <main>
         <section class="main__textArea">
-            <textarea name="" id="" resize:"none">Ingrese el texto aqui</textarea>
+            <textarea onclick="limpiarTextArea()" onpointerleave="restaurarTextAreaPrincipal()" id="textarea-principal" >Ingrese el texto aqui</textarea>
            
         </section>
         <section class="main__informacion">
             <p><img src="assets/bi_exclamation-circle-fill.png" alt=""> Solo letras minúsculas y sin acentos</p>
         </section>
         <section class="main__botones">
-            <button class="main__boton main__botones__encriptar">Encriptar</button>
-            <button class="main__boton main__botones__desencritar">Desencriptar</button>
+            <button  onclick="encriptar()" class="main__boton main__botones__encriptar">Encriptar</button>
+            <button onclick="desencriptar()" class="main__boton main__botones__desencritar">Desencriptar</button>
         </section>
         <section class="main__texto_desencriptar_encriptar">
             <h2>  Ningún mensaje fue encontrado</h2>
@@ -34,5 +34,6 @@
         </section>
     </main>
     <footer class="footer"><p>@Desarrollado por Julio Martín</p></footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
