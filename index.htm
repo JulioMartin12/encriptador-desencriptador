@@ -1,39 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encriptador-Desencriptador</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header>
-        <nav class="nav">
-            <img src="assets/Vector.png" alt="">
-        </nav>
+      <nav class="nav">
+        <img src="assets/Vector.png" alt="" />
+        <div id="mensaje" class="mensaje">
+            Texto copiado al portapapeles
+          </div>
+      </nav>
     </header>
-    <main>
+    <main class="main">
+      <div class="main__principal__izquierda">
         <section class="main__textArea">
-            <textarea onclick="limpiarTextArea()" onpointerleave="restaurarTextAreaPrincipal()" id="textarea-principal" >Ingrese el texto aqui</textarea>
-           
+          <textarea
+            onclick="limpiarTextArea()"
+            onpointerleave="restaurarTextAreaPrincipal()"
+            id="textarea-principal"
+          >
+    Ingrese el texto aquí</textarea
+          >
         </section>
         <section class="main__informacion">
-            <p><img src="assets/bi_exclamation-circle-fill.png" alt=""> Solo letras minúsculas y sin acentos</p>
+          <p>
+            <img src="assets/bi_exclamation-circle-fill.png" alt="" /> Solo
+            letras minúsculas y sin acentos
+          </p>
         </section>
         <section class="main__botones">
-            <button  onclick="encriptar()" class="main__boton main__botones__encriptar">Encriptar</button>
-            <button onclick="desencriptar()" class="main__boton main__botones__desencritar">Desencriptar</button>
+          <button
+            onclick="encriptar()"
+            class="main__boton main__botones__encriptar"
+          >
+            Encriptar
+          </button>
+          <button
+            onclick="desencriptar()"
+            class="main__boton main__botones__desencritar"
+          >
+            Desencriptar
+          </button>
         </section>
-        <section class="main__texto__desencriptar__encriptar">
-            <h2 id="main__texto__desencriptar__encriptar__titulo">Ningún mensaje fue encontrado</h2>
-            <textarea name="" id="main__texto__desencriptar__encriptar__contenido" readonly  disabled>Ingresa el texto que desees encriptar o desencriptar.
-            </textarea>
-        </section>
-        <section>
-            <button class="main__boton">Copiar</button>
-        </section>
+      </div>
+
+      <div class="main__principal__derecha">
+        <div class="main__principal__derecha__posicion">
+          <section class="main__texto__desencriptar__encriptar">
+            <div class="main__principal__derecha__imagen">
+
+                <img   src="assets/Muñeco.png" alt="" />
+            </div>
+            <h2 id="main__texto__desencriptar__encriptar__titulo">Mensaje</h2>
+            <textarea
+              name=""
+              id="main__texto__desencriptar__encriptar__contenido"
+              readonly
+              disabled
+            >
+    Ingresa el texto que desees encriptar o desencriptar.
+                    </textarea
+            >
+          </section>
+          <section class="main__contenedor__copiar">
+            <button
+              class="main__boton main__boton__copiar"
+              onclick="copiarTexto()"
+            >
+              Copiar
+            </button>
+           
+          </section>
+        </div>
+      </div>
     </main>
     <footer class="footer"><p>@Desarrollado por Julio Martín</p></footer>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
