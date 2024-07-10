@@ -82,6 +82,10 @@ body {
     display: none;
 }
 
+.main__principal__derecha__imagen img{
+    display: none;
+}
+
 .main__texto__desencriptar__encriptar {
   display: flex;
   flex-direction: column;
@@ -148,7 +152,7 @@ body {
 
 
 /* Tablet */
-@media (min-width: 400px) and (max-width: 1200px) {
+@media (min-width: 400px) and (max-width: 720px) {
 
   .main__textArea {
     margin-left: 1rem;
@@ -196,7 +200,7 @@ body {
 
 
 /* Desktop */
-@media (min-width: 769px) {
+@media (min-width: 721px) {
     .nav {
         margin-left:5%;       
       }
@@ -272,18 +276,32 @@ body {
       padding: 0%;
       margin: 1%;
       }
-  }
-  
+
+      .main__boton__copiar{
+        margin-left: 25%;
+        margin-right: 25%;
+        width: 50%;
+    }
+    .main__principal__derecha__imagen{
+      display: block;
    
-  .main__boton__copiar{
+  }
+    .main__boton__copiar{
       margin-left: 25%;
       margin-right: 25%;
       width: 50%;
   }
   .main__principal__derecha__imagen{
     display: block;
- 
 }
-  
+
+.main__principal__derecha__imagen img{
+    display: block;
+}
   }
+  
+   
+
+  
+  
   
